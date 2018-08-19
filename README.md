@@ -10,13 +10,10 @@ You need to have FSUIPC/XPUIPC installed!
 ## Installation
 Unzip the included zip and it will work!
 
-If you want this to start with your flight simulator, you will need to go to your dll.xml, which is in "%appData%\Roaming\Microsoft\FSX" for FSX users, or "%appData%\Roaming\Lockheed Martin\prepar3d\". Once there, put in your own app entry right above </SimBase.Document> like so:
+If you want this to start with your flight simulator, you will need to go to your fsuipc.ini, which for FSX is in "/Modules" within the root FSX folder. P3D should have their fsuipc.ini in a similar place.
 ```
-  <Launch.Addon>
-	<Name>FSXRichPresenceApp</Name>
-	<Disabled>True</Disabled>
-	<Path>C:\Path\to\FSX Rich Presence\FSXRichPresenceApp.exe</Path>
-  </Launch.Addon>
+[Programs]
+Run1=C:\Users\Avery Black\Desktop\Random Desktop Folder\FSX Rich Presence\FSXRichPresenceApp.exe
 ```
 
 ## Other projects used in this
