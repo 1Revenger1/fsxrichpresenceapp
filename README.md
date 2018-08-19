@@ -21,4 +21,5 @@ If you want this to start with your flight simulator, you will need to go to you
 
 ## Other projects used in this
 [Discord-rpc-CSharp](https://github.com/Lachee/discord-rpc-csharp)
+
 [FSUIPC Client DLL for .NET by Paul Henty] (http://fsuipc.paulhenty.com/#home)
