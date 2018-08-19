@@ -1,11 +1,11 @@
 # FSXRichPresence App
 
-An application that creates a Rich Presence for all versions of FSX and P3D.
+An application that creates a Rich Presence for all versions of FSX, P3D and XPlane 11.
 
 ![Alt text](example.png?raw=true "Title")
 
 ## Requirements
-You need to have FSUIPC installed!
+You need to have FSUIPC/XPUIPC installed!
 
 ## Installation
 Unzip the included zip and it will work!
