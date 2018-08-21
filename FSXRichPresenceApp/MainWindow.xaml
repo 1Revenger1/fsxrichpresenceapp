@@ -1,0 +1,57 @@
+﻿<Window x:Class="FSXRichPresenceApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FSXRichPresenceApp"
+        mc:Ignorable="d"
+        Title="FSX Rich Presence" Height="350" Width="525"
+        FontSize="14"
+        Closing="Window_Closing"
+        >
+
+    <DockPanel>
+        <StatusBar DockPanel.Dock="Bottom" Height="24">
+            <TextBlock Name="lblConnectionStatus">Connection Status</TextBlock>
+        </StatusBar>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" Margin="10,1,20,1">Indicated Airpeed (Knots):</TextBlock>
+            <TextBlock Name="txtAirspeed" Grid.Row="0" Grid.Column="1" Margin="1">0</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,1,20,1">Ground Speed:</TextBlock>
+            <TextBlock Name="txtGroundspeed" Grid.Row="1" Grid.Column="1" Margin="1">0</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,41,20,-39">Vertical Speed:</TextBlock>
+            <TextBlock Name="txtVertspeed" Grid.Row="1" Grid.Column="1" Margin="2,41,0,-39">0</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,21,20,-19">Heading:</TextBlock>
+            <TextBlock Name="txtHeading" Grid.Row="1" Grid.Column="1" Margin="2,22,0,-20"> 0</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,61,20,-59">On Ground:</TextBlock>
+            <TextBlock Name="txtOnGround" Grid.Row="1" Grid.Column="1" Margin="1,61,1,-59"> false</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,81,20,-79">Sim Version:</TextBlock>
+            <TextBlock Name="txtSimNum" Grid.Row="1" Grid.Column="1" Margin="0,81,2,-79"> 0</TextBlock>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,100,52,-98">Minimize to task tray on startup:</TextBlock>
+            <CheckBox Name="chkMinimize" Grid.Row="1" Grid.Column="1" Margin="1,101,1,-99"></CheckBox>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="10,120,20,-118">Close with Simulator:</TextBlock>
+            <CheckBox Name="chkClose" Grid.Row="1" Grid.Column="1" Margin="2,121,0,-119"></CheckBox>
+            <TextBlock Grid.Row="1" Grid.Column="0" Margin="0,253,30,-251">Uses Paul Henty's FSUIPC Client DLL for .NET</TextBlock>
+            
+        </Grid>
+    </DockPanel>
+    <Window.Resources>
+
+        <ContextMenu x:Key="NotifierContextMenu"
+                    Placement="Mouse">
+
+            <MenuItem Header="Exit" Click="Exit"/>
+            <MenuItem Header="Show" Click="Show"/>
+
+        </ContextMenu>
+
+    </Window.Resources>
+</Window>
