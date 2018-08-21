@@ -8,7 +8,8 @@ An application that creates a Rich Presence for all versions of FSX, P3D and XPl
 You need to have FSUIPC/XPUIPC installed!
 
 ## Installation
-Unzip the included zip and it will work!
+1) Download the latest FSX Rich Presence from [here](https://github.com/1Revenger1/fsxrichpresenceapp/releases)
+2) Unzip the zip and it will work!
 
 If you want this to start with your flight simulator, you will need to go to your fsuipc.ini, which for FSX is in "/Modules" within the root FSX folder. P3D should have their fsuipc.ini in a similar place.
 ```
