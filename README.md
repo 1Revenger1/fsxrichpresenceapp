@@ -17,6 +17,14 @@ If you want this to start with your flight simulator, you will need to go to you
 Run1=C:\Users\Avery Black\Desktop\Random Desktop Folder\FSX Rich Presence\FSXRichPresenceApp.exe
 ```
 
+### Additional steps for X-Plane
+If you want the altitude reading to work, you need to go to where XPlane is installed, and then go to `/resources/plugins/XPUIPC/XPUIPCOffsets.cfg` Once you open this up, you then need to add these three lines to the end and save the file.
+```
+# Altitude
+Dataref Altitude sim/flightmodel/position/elevation float
+Offset 0x34B0 FLOAT64 1 r $Altitude
+```
+
 ## Other projects used in this
 [Discord-rpc-CSharp](https://github.com/Lachee/discord-rpc-csharp)
 
