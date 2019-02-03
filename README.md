@@ -15,7 +15,9 @@ If you want this to start with your flight simulator, you will need to go to you
 ```
 [Programs]
 Run1=C:\Users\Avery Black\Desktop\Random Desktop Folder\FSX Rich Presence\FSXRichPresenceApp.exe
-```
+```  
+
+Editing the exe.xml should work as well for FSX/P3D
 
 ### Additional steps for X-Plane
 If you want the altitude reading to work, you need to go to where XPlane is installed, and then go to `/resources/plugins/XPUIPC/XPUIPCOffsets.cfg` Once you open this up, you then need to add these three lines to the end and save the file.
